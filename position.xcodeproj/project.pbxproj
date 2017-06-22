@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3C1FB31EF7B38E00079379 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3C1FB21EF7B38E00079379 /* CoreLocation.framework */; };
+		BA79A8E91EFBAC24008BD303 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA79A8E81EFBAC24008BD303 /* CoreMotion.framework */; };
+		BA79A8EB1EFBC46B008BD303 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA79A8EA1EFBC46A008BD303 /* AVFoundation.framework */; };
 		BA8F231F1EF6384200A87A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8F231E1EF6384200A87A7D /* AppDelegate.swift */; };
 		BA8F23211EF6384200A87A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8F23201EF6384200A87A7D /* ViewController.swift */; };
 		BA8F23241EF6384200A87A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8F23221EF6384200A87A7D /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA3C1FB21EF7B38E00079379 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA79A8E81EFBAC24008BD303 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BA79A8EA1EFBC46A008BD303 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BA8F231B1EF6384200A87A7D /* position.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = position.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8F231E1EF6384200A87A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8F23201EF6384200A87A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA79A8EB1EFBC46B008BD303 /* AVFoundation.framework in Frameworks */,
+				BA79A8E91EFBAC24008BD303 /* CoreMotion.framework in Frameworks */,
+				BA3C1FB31EF7B38E00079379 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA3C1FB11EF7B38E00079379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA79A8EA1EFBC46A008BD303 /* AVFoundation.framework */,
+				BA79A8E81EFBAC24008BD303 /* CoreMotion.framework */,
+				BA3C1FB21EF7B38E00079379 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA8F23121EF6384200A87A7D = {
 			isa = PBXGroup;
 			children = (
 				BA8F231D1EF6384200A87A7D /* position */,
 				BA8F23351EF6384300A87A7D /* positionTests */,
 				BA8F231C1EF6384200A87A7D /* Products */,
+				BA3C1FB11EF7B38E00079379 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,7 +368,7 @@
 				DEVELOPMENT_TEAM = NQMA3RK5EZ;
 				INFOPLIST_FILE = position/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.position;
+				PRODUCT_BUNDLE_IDENTIFIER = feng.beryl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -361,7 +381,7 @@
 				DEVELOPMENT_TEAM = NQMA3RK5EZ;
 				INFOPLIST_FILE = position/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.position;
+				PRODUCT_BUNDLE_IDENTIFIER = feng.beryl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -416,6 +436,7 @@
 				BA8F233D1EF6384300A87A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA8F233E1EF6384300A87A7D /* Build configuration list for PBXNativeTarget "positionTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				BA8F23401EF6384300A87A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
